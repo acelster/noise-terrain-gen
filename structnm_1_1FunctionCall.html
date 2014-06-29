@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Noise Modeler Library: Noise Modeler Library Documentation</title>
+<title>Noise Modeler Library: nm::FunctionCall Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,9 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -60,7 +60,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-</div><!-- top -->
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -75,29 +82,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>nm</b></li><li class="navelem"><a class="el" href="structnm_1_1FunctionCall.html">FunctionCall</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structnm_1_1FunctionCall-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Noise Modeler Library Documentation </div>  </div>
+<div class="title">nm::FunctionCall Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Introduction</h2>
-<p>Welcome to the reference for the noise modeler library, nmlib.</p>
-<p>The Noise Modeler Library is a library for specifying content generating procedural functions based on noise in a platform independent manner.</p>
-<p>The prime example of such content, is terrain heightmap generation. With the help of this library, it is possible represent terrains that are several times the size of the earth using only a few kilobytes. This representation may be expanded during run-time in a game at high speed by utilizing the GLSL code generation feature.</p>
-<p>Other content may for example be vegetation density maps, air humidity, and area distributions among factions in a game.</p>
-<p>Models for nmlib may be created using the Noise Modeler GUI application, which is a real-time editor for endless procedural terrains. This application is documented by its own user guide.</p>
-<h2>Documentation overview</h2>
-<p>The library is divided into four modules, and so is the documentation:</p>
-<ul>
-<li><a class="el" href="group__model.html">model</a> is the core part of the library, everything depends on this.</li>
-<li><a class="el" href="group__serialization.html">serialization</a> is concerned with serialization and parsing of models.</li>
-<li><a class="el" href="group__codegeneration.html">codegeneration</a> is responsible for generating code, such as GLSL to evaluate functions.</li>
-<li><a class="el" href="group__util.html">util</a> contains utility functions for the library. </li>
+<div class="dynheader">
+Inheritance diagram for nm::FunctionCall:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structnm_1_1FunctionCall.png" usemap="#nm::FunctionCall_map" alt=""/>
+  <map id="nm::FunctionCall_map" name="nm::FunctionCall_map">
+<area href="structnm_1_1SyntaxNode.html" alt="nm::SyntaxNode" shape="rect" coords="0,0,105,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7b0bee0869d9fa5ec53d2c06526cd499"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7b0bee0869d9fa5ec53d2c06526cd499"></a>
+template&lt;typename T , typename U , typename V &gt; </td></tr>
+<tr class="memitem:a7b0bee0869d9fa5ec53d2c06526cd499"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FunctionCall</b> (T &amp;&amp;function, U &amp;&amp;ins, V &amp;&amp;outs)</td></tr>
+<tr class="separator:a7b0bee0869d9fa5ec53d2c06526cd499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb180667ea484622e7ac96a1e6649c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb180667ea484622e7ac96a1e6649c98"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>gen</b> (<a class="el" href="classnm_1_1InlineGenerator.html">InlineGenerator</a> &amp;g, std::ostream &amp;out) override</td></tr>
+<tr class="separator:adb180667ea484622e7ac96a1e6649c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1387d725c30c07f387c3910a95368816"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1387d725c30c07f387c3910a95368816"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>functionName</b></td></tr>
+<tr class="separator:a1387d725c30c07f387c3910a95368816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a36bfe96f576b15c0eb1c1600ae0522"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a36bfe96f576b15c0eb1c1600ae0522"></a>
+std::vector&lt; <a class="el" href="structnm_1_1Variable.html">Variable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a1a36bfe96f576b15c0eb1c1600ae0522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a2c169a50301d09e427bd7af5b46a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13a2c169a50301d09e427bd7af5b46a2"></a>
+std::vector&lt; <a class="el" href="structnm_1_1Variable.html">Variable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+<tr class="separator:a13a2c169a50301d09e427bd7af5b46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>codegeneration/<a class="el" href="inlinegenerator_8hpp_source.html">inlinegenerator.hpp</a></li>
 </ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 12:37:16 for Noise Modeler Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 29 2014 12:37:12 for Noise Modeler Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

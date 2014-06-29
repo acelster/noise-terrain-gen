@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Noise Modeler Library: Noise Modeler Library Documentation</title>
+<title>Noise Modeler Library: util.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,10 +38,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -58,6 +58,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -77,27 +82,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Noise Modeler Library Documentation </div>  </div>
+<div class="title">util.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Introduction</h2>
-<p>Welcome to the reference for the noise modeler library, nmlib.</p>
-<p>The Noise Modeler Library is a library for specifying content generating procedural functions based on noise in a platform independent manner.</p>
-<p>The prime example of such content, is terrain heightmap generation. With the help of this library, it is possible represent terrains that are several times the size of the earth using only a few kilobytes. This representation may be expanded during run-time in a game at high speed by utilizing the GLSL code generation feature.</p>
-<p>Other content may for example be vegetation density maps, air humidity, and area distributions among factions in a game.</p>
-<p>Models for nmlib may be created using the Noise Modeler GUI application, which is a real-time editor for endless procedural terrains. This application is documented by its own user guide.</p>
-<h2>Documentation overview</h2>
-<p>The library is divided into four modules, and so is the documentation:</p>
-<ul>
-<li><a class="el" href="group__model.html">model</a> is the core part of the library, everything depends on this.</li>
-<li><a class="el" href="group__serialization.html">serialization</a> is concerned with serialization and parsing of models.</li>
-<li><a class="el" href="group__codegeneration.html">codegeneration</a> is responsible for generating code, such as GLSL to evaluate functions.</li>
-<li><a class="el" href="group__util.html">util</a> contains utility functions for the library. </li>
-</ul>
-</div></div><!-- contents -->
+<a href="util_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef UTIL_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define UTIL_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;nmlib/util/makeunique.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;nmlib/util/noncopyable.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;nmlib/util/userdataprovider.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//signals is very expensive, so don&#39;t include unless needed</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#include &lt;nmlib/util/signals.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // UTIL_HPP</span></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 12:37:16 for Noise Modeler Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 29 2014 12:37:10 for Noise Modeler Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

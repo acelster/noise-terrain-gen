@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>Noise Modeler Library: Noise Modeler Library Documentation</title>
+<title>Noise Modeler Library: Class Members - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,9 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -60,6 +60,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li class="current"><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -75,26 +92,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">Noise Modeler Library Documentation </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Introduction</h2>
-<p>Welcome to the reference for the noise modeler library, nmlib.</p>
-<p>The Noise Modeler Library is a library for specifying content generating procedural functions based on noise in a platform independent manner.</p>
-<p>The prime example of such content, is terrain heightmap generation. With the help of this library, it is possible represent terrains that are several times the size of the earth using only a few kilobytes. This representation may be expanded during run-time in a game at high speed by utilizing the GLSL code generation feature.</p>
-<p>Other content may for example be vegetation density maps, air humidity, and area distributions among factions in a game.</p>
-<p>Models for nmlib may be created using the Noise Modeler GUI application, which is a real-time editor for endless procedural terrains. This application is documented by its own user guide.</p>
-<h2>Documentation overview</h2>
-<p>The library is divided into four modules, and so is the documentation:</p>
-<ul>
-<li><a class="el" href="group__model.html">model</a> is the core part of the library, everything depends on this.</li>
-<li><a class="el" href="group__serialization.html">serialization</a> is concerned with serialization and parsing of models.</li>
-<li><a class="el" href="group__codegeneration.html">codegeneration</a> is responsible for generating code, such as GLSL to evaluate functions.</li>
-<li><a class="el" href="group__util.html">util</a> contains utility functions for the library. </li>
+&#160;<ul>
+<li>addedInputLink
+: <a class="el" href="classnm_1_1Module.html#ad4a21e0d41101a62030a744ec6fd15b4">nm::Module</a>
+</li>
+<li>addedOutputLink
+: <a class="el" href="classnm_1_1Module.html#aee989df048af2d402f054d85cd5a8d4c">nm::Module</a>
+</li>
+<li>dependenciesChanged
+: <a class="el" href="classnm_1_1Module.html#aa81546e610bb6441b3f902e01456f976">nm::Module</a>
+</li>
+<li>descriptionChanged
+: <a class="el" href="classnm_1_1Module.html#a73bd0506bbab9ddeffffc9b7f5d6e960">nm::Module</a>
+, <a class="el" href="classnm_1_1ModuleType.html#adff3b83ed40d1d2da12cc1c5edf543bc">nm::ModuleType</a>
+</li>
+<li>destroying
+: <a class="el" href="classnm_1_1Module.html#adb17323b21628166e69d20853a89a3fc">nm::Module</a>
+, <a class="el" href="classnm_1_1ModuleType.html#a7fb0b6a8da6c9715b658fb3402bcd30d">nm::ModuleType</a>
+, <a class="el" href="classnm_1_1TypeManager.html#af7823c4fbb914ebe86628096e121caea">nm::TypeManager</a>
+</li>
+<li>inputAdded
+: <a class="el" href="classnm_1_1ModuleType.html#a84891f24452f50ae29ffc902cbe75703">nm::ModuleType</a>
+</li>
+<li>inputRemoved
+: <a class="el" href="classnm_1_1ModuleType.html#ab2e177f3ab87e5da226e918350150f8d">nm::ModuleType</a>
+</li>
+<li>nameChanged
+: <a class="el" href="classnm_1_1Module.html#a4b23e01804b90eef878609ca051c1436">nm::Module</a>
+, <a class="el" href="classnm_1_1ModuleType.html#a8eb1bfdb592b86932137abd6239a624e">nm::ModuleType</a>
+</li>
+<li>outputAdded
+: <a class="el" href="classnm_1_1ModuleType.html#aae9d171c09e25f612d96a36888ca13ed">nm::ModuleType</a>
+</li>
+<li>outputRemoved
+: <a class="el" href="classnm_1_1ModuleType.html#a08a829c348cdea2f9362a436249e7be9">nm::ModuleType</a>
+</li>
+<li>removedInputLink
+: <a class="el" href="classnm_1_1Module.html#aa8f56b2ed71d931f392999647959633e">nm::Module</a>
+</li>
+<li>removedOutputLink
+: <a class="el" href="classnm_1_1Module.html#aa6ceb8ca1674f5c08717f1d5e13f34e0">nm::Module</a>
+</li>
+<li>removingInput
+: <a class="el" href="classnm_1_1ModuleType.html#aca3454435b23d4efb544e90d2d02bd2f">nm::ModuleType</a>
+</li>
+<li>removingOutput
+: <a class="el" href="classnm_1_1ModuleType.html#aff9743de02d2db5791e72457042ef24a">nm::ModuleType</a>
+</li>
+<li>userTypesChanged
+: <a class="el" href="classnm_1_1TypeManager.html#a7480bfdcecbb394e4ec60dceb9014c86">nm::TypeManager</a>
+</li>
 </ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Sun Jun 29 2014 12:37:16 for Noise Modeler Library by &#160;<a href="http://www.doxygen.org/index.html">
