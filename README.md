@@ -1,3 +1,7 @@
+# The project has moved to noisemodeler/noisemodeler!
+
+Please use http://github.com/noisemodeler/noisemodeler instead
+
 # Noise Modeler
 
 An in-game procedural terrain and content generation framework.
